@@ -11,4 +11,4 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - run: python development\toml_to_json.py
+      - run: python development/toml_to_json.py
