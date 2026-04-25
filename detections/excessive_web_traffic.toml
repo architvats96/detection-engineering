@@ -1,8 +1,8 @@
 [metadata]
-creation_date = "2023/12/11"
+creation_date = "2026/04/25"
 
 [rule]
-author = ["Anthony Isherwood"]
+author = ["Archit Vats"]
 description = "Triggers when more than 1000 queries to a web server have been observed in a 5 min window."
 from = "now-6m"
 name = "Excessive Web Traffic"

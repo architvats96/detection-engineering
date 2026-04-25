@@ -1,8 +1,8 @@
 [metadata]
-creation_date = "2023/07/11"
+creation_date = "2026/04/25"
 
 [rule]
-author = ["Anthony Isherwood"]
+author = ["Archit Vats"]
 description = "From looking at the sysmon_operational logs, we're triggering on powershell running through a bat file execution."
 from = "now-6m"
 name = "PowerShell Execution via a BAT File"

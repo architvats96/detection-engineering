@@ -1,8 +1,8 @@
 [metadata]
-creation_date = "2023/06/11"
+creation_date = "2026/04/25"
 
 [rule]
-author = ["Anthony Isherwood"]
+author = ["Archit Vats"]
 description = "This alert looks for both specific files and file extensions written to a file path containing Windows\\Temp\\."
 from = "now-6m"
 name = "Suspicious File Written to Temp Directory"

@@ -1,8 +1,8 @@
 [metadata]
-creation_date = "2023/10/11"
+creation_date = "2026/04/25"
 
 [rule]
-author = ["Anthony Isherwood"]
+author = ["Archit Vats"]
 description = "This alert triggers via sysmon data on a string of text that occurs out of the box with msfvenom."
 from = "now-6m"
 name = "Potential MSF PowerShell Payload Observed"

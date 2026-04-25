@@ -1,8 +1,8 @@
 [metadata]
-creation_date = "2023/12/11"
+creation_date = "2026/04/25"
 
 [rule]
-author = ["Anthony Isherwood"]
+author = ["Archit Vats"]
 description = "Using Zeek HTTP data, we're looking at .bat file extensions on any destination port that isn't port 80."
 from = "now-6m"
 name = "Bat files observed in HTTP Traffic on Unusual Port "
