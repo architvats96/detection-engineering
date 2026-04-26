@@ -8,8 +8,8 @@ This project demonstrates an end-to-end **Detection Engineering Lifecycle**, bri
 ## Features
 - **Validations**: The detection rules written in TOML are verified with a custom script ensuring proper syntax and MITRE info before they are imported into Elastic.
 - **Metrics**: Progress is tracked with the help of CSV and MD reports along with a JSON file which can be directly imported into MITRE Navigator.
-- **GitHub Actions**: The validation and metric scripts are bundled in a CI/CD pipeline which runs upon importing any new detections which are then sent to the SIEM via Elastic Security API.
-- **Branch Protection Rule**: The main branch is enabled with a protection rule ensuring that code can only be pushed into it from the testing branch after all checks have successfully passed.
+- **GitHub Actions**: The validation and metric scripts are bundled in a CI/CD pipeline which is used while importing any new detections and then sending them to the SIEM via Elastic Security API.
+- **Branch Protection Rule**: The main branch is enabled with a protection rule ensuring that code can be pushed into it from the testing branch only after all checks have successfully passed.
 
 ## Project Structure
 ```
