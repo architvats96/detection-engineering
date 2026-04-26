@@ -14,16 +14,23 @@ This project demonstrates an end-to-end **Detection Engineering Lifecycle**, bri
 ## Project Structure
 ```
 ├── .github/workflows/      # CI/CD Pipeline definitions
+
 ├── detections/             # TOML Detection rules
+
 ├── development/            # Lab setup and custom python scripts
 	└── validation.py			## Checks that the TOML detections have a proper syntax
 	└── mitre.py				## Checks that the TOML detections have the right MITRE info
+	└── toml_to_json.py			## Pushes the detections to Elastic instance
 	└── toml_to_csv.py			## Creates a CSV report of all detections
 	└── toml_to_md.py			## Creates a progress tracker report for all detections
 	└── toml_to_report.py		## Creates a MITRE navigation report
-├── reports/                	# Metrics in MD & CSV formats along with MITRE Navigator layers
+	
+├── reports/                # Metrics in MD & CSV formats along with MITRE Navigator layers
 
 ```
+## Architecture Diagram
+![workflow](Architecture Diagram.png)
+
 ## Impact
 
 This project transitions detection work from a manual, error-prone process to a scalable, version-controlled system. It demonstrates the ability to not only identify threats but to build the infrastructure required to defend an enterprise environment at scale
