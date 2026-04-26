@@ -29,7 +29,8 @@ This project demonstrates an end-to-end **Detection Engineering Lifecycle**, bri
 
 ```
 ## Architecture Diagram
-![workflow](assets/Architecture Diagram.png)
+
+![workflow](https://github.com/architvats96/detection-engineering/blob/e852718d958b7796d5f06ea447deeaff50a113a7/assets/Architecture%20Diagram.png)
 
 ## Impact
 
