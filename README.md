@@ -30,7 +30,7 @@ This project demonstrates an end-to-end **Detection Engineering Lifecycle**, bri
 ```
 ## Architecture Diagram & Workflow
 
-![workflow](https://github.com/architvats96/detection-engineering/blob/fa0b4b51128b1f15573779dad1aefa888b711164/assets/Architecture%20Diagram.png)
+![workflow](https://github.com/architvats96/detection-engineering/blob/d2891a909350784d9dda4e7a8fd87e60b74ec17b/assets/Architecture%20Diagram.png)
 
 The workflow begins from detection engineering where one can analyse a malicious activity in Elastic and wants to create a detection rule for it. Instead of doing it via GUI, we can take the **detection-as-code** approach and create a TOML file for it which is Elastic's way of writing a detection rule. 
 
