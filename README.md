@@ -34,7 +34,7 @@ This project demonstrates an end-to-end **Detection Engineering Lifecycle**, bri
 
 The workflow begins from detection engineering where one can analyse a malicious activity in Elastic and wants to create a detection rule for it. Instead of doing it via GUI, we can take the **detection-as-code** approach and create a TOML file for it which is Elastic's way of writing a detection rule. 
 
-This can then be pushed into the testing branch of the project. This is where the CI/CD pipeline takes over and any merge request into the main branch will have to undergo validation checks as per the branch protection rule. THis is done via two python scripts namely `validation.py` and `mitre.py` which checks for proper syntax and MITRE info while ensuring that the detection rule is ready to be used.
+This can then be pushed into the testing branch of the project. This is where the CI/CD pipeline takes over and any merge request into the main branch will have to undergo validation checks as per the branch protection rule. This is done via two python scripts namely `validation.py` and `mitre.py` which checks for proper syntax and MITRE info while ensuring that the detection rule is ready to be used.
 
 Once that's done, the detection rule can be imported into our SIEM by using `toml_to_json.py` which implements Elastic Security API and ingests the rule into a cloud instance of Elastic.
 
