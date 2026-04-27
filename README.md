@@ -27,6 +27,8 @@ This project demonstrates an end-to-end **Detection Engineering Lifecycle**, bri
 	
 ├── reports/                # Metrics in MD & CSV formats along with MITRE Navigator layers
 
+├── assets/                 # Visual artifacts for the readme file
+
 ```
 ## Architecture Diagram & Workflow
 
@@ -34,9 +36,9 @@ This project demonstrates an end-to-end **Detection Engineering Lifecycle**, bri
 
 The workflow begins from detection engineering where one can analyse a malicious activity in Elastic and wants to create a detection rule for it. Instead of doing it via GUI, we can take the **detection-as-code** approach and create a TOML file for it which is Elastic's way of writing a detection rule. 
 
-This can then be pushed into the testing branch of the project. In order to use this detection, it has to undergo a pull request into the main branch which isn't directly allowed due to a branch protection rule upon it. This is where the CI/CD pipeline takes over and performs validation checks to satisfy the branch protection rule. It is done via two python scripts namely `validation.py` and `mitre.py` which checks for proper syntax and MITRE info while ensuring that the detection rule is ready to be used.
+This can then be pushed into the testing branch of the project. In order to use this detection, it has to undergo a pull request into the main branch however, that isn't directly allowed due to a branch protection rule upon it. This is where the CI/CD pipeline takes over and performs validation checks to satisfy the branch protection rule. It is done via two python scripts namely `validation.py` and `mitre.py` which checks for proper syntax and MITRE info while ensuring that the detection rule is ready to be used.
 
-Once that's done, the detection rule can be imported into our SIEM by using `toml_to_json.py` which implements Elastic Security API and ingests the rule into a cloud instance of Elastic.
+Once that's done, the detection rule can be imported into our SIEM by using `toml_to_json.py` which implements Elastic Security API and ingests the rule into a cloud instance of Elastic. The API key used is stored into GitHub secrets following best practices and is called upon when needed.
 
 ## Impact
 
